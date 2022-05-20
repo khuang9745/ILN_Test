@@ -1,70 +1,93 @@
-/*Add padding and margin to space out the page.
-Make the font larger too.*/
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
 body{
-	margin:1%;
-	padding:1%;
-	font-size:150%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	background-color: whitesmoke;
+	
 }
 
-/*Make the h1 heading bigger with a bold font*/
-h1{
-	font-size: 2em; 
-	font-weight: bold;
+header{
+	background-color: white;
 }
 
-
-.active{
-	background: white;
-    text-transform: uppercase;
-	text-align: center;
+button{
+	padding: 8px;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	background-color: whitesmoke;
 }
 
-.active a{
-	text-decoration: none;;
+button:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+
 }
 
-/*Style the images*/
-img{
-    height: 200px;
-    width:auto;
-    border: 3px solid blue;
-    padding: 25px;
-    border-radius: 10px;
-    margin: 10px;
+.container{
+	width: 95%;
+	margin:auto;
 }
 
-/*Make the h2 heading match h1*/
-h2{
-	font-size: 2em; 
-	font-weight: bold;
+.nav{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: auto;
+	padding: 20px 0;
+	background-color: white;
 }
 
-/*Improve the spacing for paragraphs AND headings*/
-p, h1, h2 {
-    padding: 10px;
+.nav button{
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/*Add borders around the main components and some
-space too*/
-header, nav, main, h1, footer{
-	border: 2px solid grey;
-	margin: 10px 0;
+.create-box{
+	width: 380px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: whitesmoke;
+	box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.5);
 }
 
-
-/*Change the styling for all of the list 
-items in the nav section*/
-nav li{
-	background-color: #ECFF4D;
-	padding:10px;
-	width:25%;
-	border:1px solid black;
-	display: inline-block;
-	width: 20%;
+.create-box textarea{
+	width: 100%;
+	border-radius: 5px;
+	font-family:'Courier New', Courier, monospace;
+	border: 1px solid lightgray;
 }
 
+.create-box button{
+	width: fit-content;
+}
 
+.flashcards{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 0 10px;
+}
 
-/*Added this so the links stay the same color*/
-a:visited{color:#0000FF}
+.flashcard{
+	width: 370px;
+	height: 200px;
+	word-wrap: break-word;
+	margin: 10px;
+	background-color: white;
+	box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.5);
+}
 
+.flashcardd h2{
+	font-size: 1rem;
+}
